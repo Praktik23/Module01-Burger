@@ -10,6 +10,10 @@ body {
 }
 
 .header {
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.header {
     font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
@@ -43,6 +47,11 @@ body {
 
 }
 
+.header-nav a:hover {
+    color: #FFC725;
+
+}
+
 .header-nav a::after{
     content: '';
     width: 100%;
@@ -63,6 +72,7 @@ button {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 
 }
 
@@ -102,6 +112,7 @@ button {
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
+    margin-bottom: 140px;
 
 }
 
@@ -111,7 +122,8 @@ button {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 7px;
+    margin-left: 1px;
 
 }
 
@@ -123,11 +135,20 @@ button {
 
 }
 
+.breadcrumbs a:hover {
+    color: #FFC725;
+}
+
 .breadcrumbs a::before {
     content: '/';
     position: relative;
-    left: -7px;
+    left: -4px;
+    pointer-events: none;
 
+}
+
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
 }
 
 .breadcrumbs li:first-child a::before {
@@ -138,15 +159,84 @@ button {
     font-weight: 700;
     font-size: 79px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 21px;
 
 }
 
 .description {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
+}
+
+.banner {
+    background-image: url(../imeges/baner-box.jpg);
+    background-repeat:no-repeat;
+    background-position: center center;
+    margin-bottom: 100px;
+    min-width: 1180px;
+    height: 438px;
+    margin-top: -1px;
+}
+
+.banner-box {
+    padding-top: 100px;
+    padding-left: 100px;
+    width: 180px;
+    height: 438px;
+    
+}
+
+
+.banner-sale {
+    position: relative;
+    top: 4px;
+    background-color: #F37335;
+    border-radius: 14px;
+    padding: 5px 18px;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-title {
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.banner-text {
+    width: 324px;
+    height: 48px;
+    margin-top: 13px;
+    margin-bottom: 15px;
+    font-family: Open Sans; 
+    color: #FAF9F9;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.banner-link {
+    display: flex;
+    width: 170px;
+    height: 58px;
+    background-color: #FBB731;
+    border-radius: 5px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: #1E2F40;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;   
+
 }
