@@ -14,14 +14,16 @@
     <header>
         <div class="container">
             <div class="header">
-                <a class="header-logo" href="#"></a>
-                <div class="nav">
-                    <ul class="header-nav">
-                        <li><a href="#" class="">Главная</a></li>
-                        <li><a href="#" class="active">Меню</a></li>
-                        <li><a href="#" class="">О нас</a></li>
-                        <li><a href="#" class="">Контакты</a></li>
-                    </ul>
+                <div class="header-item">
+                    <a class="header-logo" href="#"></a>
+                    <div class="nav">
+                        <ul class="header-nav">
+                            <li><a href="#" class="">Главная</a></li>
+                            <li><a href="#" class="active">Меню</a></li>
+                            <li><a href="#" class="">О нас</a></li>
+                            <li><a href="#" class="">Контакты</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <button type="button" class="button">
                     <span class="button-item">
@@ -217,19 +219,27 @@
                     <ul class="footer-list">
                         <li>
                             <span>Время</span>
-                            ПН - ВС <br>
-                            11:00 - 22:00 без перерывов
+                            <div class="footer-list__inner">
+                                ПН - ВС <br>
+                                11:00 - 22:00 без перерывов
+                            </div>
                         </li>
-                        <li>
+                        <li class="footer-list__inner">
                             <span>Адрес</span>
-                            Москва, ул. Тверская, 5, вход со двора
+                            <div class="footer-list__inner">
+                                Москва, ул. Тверская, 5, вход со двора
+                            </div>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-tel">
-                    <ul class="footer-list">
-                        <li>+ 7 900 787 13-13</li>
-                        <li>+ 7 900 700 14-14</li>
+                    <ul class="footer-list footer-list__tel">
+                        <li>
+                            <a href="tel:+79007871313">+ 7 900 787 13-13</a>
+                        </li>
+                        <li>
+                            <a href="tel:+79007001414">+ 7 900 700 14-14</a>
+                        </li>
                     </ul>
                 </div>
             </div>
