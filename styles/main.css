@@ -118,7 +118,7 @@ button {
 
 .breadcrumbs {
     padding-left: 0;
-    margin-top: 0;
+    margin-top: 3px;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -170,6 +170,7 @@ button {
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
+    /* padding-top: 1px; */
 }
 
 .banner {
@@ -348,4 +349,57 @@ button {
     position: relative;
     top: 1px;
     right: 3px;
+}
+
+.menu-title__holder{
+    color: #1B2A49;
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 102px;
+}
+
+.menu-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 37px;
+}
+
+.menu-fkex-cover {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* .menu-flex-cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 100%;
+    height: 430px;
+} */
+
+.menu-flex-title {
+    text-align: center;
+    color: #1B2A49;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    left: 1px;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.menu-flex-price {
+    text-align: center;
+    color: #979797;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 9px;
+    margin-bottom: 22px;
 }
