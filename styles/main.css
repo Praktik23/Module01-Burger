@@ -187,12 +187,11 @@ button {
 }
 
 .banner {
-    /* background-image: url(../images/bg.jpg); */
-    background-image: url(../images/baner-box.jpg);
+    background-image: url(../images/banner-box.jpg);
     background-repeat:no-repeat;
-    background-position: center center;
+    background-position: center;
     margin-bottom: 65px;
-    min-width: 1180px;
+    /* width: 1180px; */
     height: 438px;
     margin-top: -1px;
 }
@@ -649,4 +648,83 @@ h1 span {
     font-size: 44px;
     font-weight: 700;
     margin-bottom: 10px;
+}
+
+/*Responsive*/
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 78px;
+        background-size: contain;
+        margin: 0;
+        position: relative;
+        top: 14px;
+        left: 1px;
+    }
+    .header-nav {
+        gap: 22px;
+        margin: 0;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .header {
+        margin-top: 30px;
+        margin-bottom: 12px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .breadcrumbs {
+        padding-left: 14px;
+    }
+    .title {
+        position: relative;
+        left: 6px;
+    }
+    .description {
+        position: relative;
+        top: -2px;
+        left: 7px;
+    }
+    .bg-menu {
+        margin-bottom: 69px;
+    }
+    .banner {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -80px center;
+        max-width: 738px;
+        height: 438px;
+        margin: 0 auto;
+    }
+    .banner-box {
+    background-position: center center;
+    background-size: cover; 
+    padding-top: 101px;
+    padding-left: 26px;
+    height: 438px;
+    max-width: 1000px;
+    }
+    .menu-header {
+        margin-top: 46px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 19px;
+    }
+    .menu-title__holder {
+        margin-top: 91px;
+    }
+    /* .menu-holder {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    } */
+    /* .menu-flex {
+       
+    } */
 }
